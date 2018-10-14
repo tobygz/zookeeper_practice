@@ -105,7 +105,7 @@ func (this *Myconn) onMasterDown() {
 func (this *Myconn) handleMasterDownEvt(ch <-chan zk.Event) {
         go func(chv <-chan zk.Event) {
                 e := <-chv
-                fmt.Printf("handleMasterDownEvt: %+v\n", e)
+                log.Println("handleMasterDownEvt: ", e)
                 this.onMasterDown()
         }(ch)
 }
