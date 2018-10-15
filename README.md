@@ -8,11 +8,11 @@ practice zookeeper with go-zookeeper
 
 zookeeper tree
 ------------------------------------------------------------------------
-[zk: localhost:2181(CONNECTED) 4] ls /
-[myconn, zookeeper]
-[zk: localhost:2181(CONNECTED) 5] ls /myconn
-[process_list, master]
-[zk: localhost:2181(CONNECTED) 6] ls /myconn/process_list
-[001, 002]
-[zk: localhost:2181(CONNECTED) 7] get /myconn/master
-2202
+[zk: localhost:2181(CONNECTED) 4] ls /<br>
+[myconn, zookeeper]<br>
+[zk: localhost:2181(CONNECTED) 5] ls /myconn<br>
+[process_list, master]<br>
+[zk: localhost:2181(CONNECTED) 6] ls /myconn/process_list<br>
+[001, 002]<br>
+[zk: localhost:2181(CONNECTED) 7] get /myconn/master<br>
+2202<br>
